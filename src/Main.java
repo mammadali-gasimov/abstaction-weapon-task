@@ -11,6 +11,10 @@ public class Main {
 
         System.out.println("Enter bullet count in the comb:");
         int bulletsInComb = scanner.nextInt();
+        while (bulletsInComb > capacity) {
+            System.out.println("Enter bullet count in the comb:");
+            bulletsInComb = scanner.nextInt();
+        }
 
         AK47 ak47 = new AK47(bulletCount, capacity, bulletsInComb);
         while (ak47.bulletCount + ak47.bulletInComb > 0) {
