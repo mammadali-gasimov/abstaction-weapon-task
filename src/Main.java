@@ -15,6 +15,7 @@ public class Main {
         AK47 ak47 = new AK47(bulletCount, capacity, bulletsInComb);
         while (ak47.bulletCount + ak47.bulletInComb > 0) {
             ak47.openFire();
+            System.out.println("Bullets in comb: " + ak47.bulletInComb + ". Bullets count: " + ak47.bulletCount);
             if (ak47.bulletInComb == 0) {
                 System.out.println("How many bullets you want to reload with?");
                 int reloadAmount = scanner.nextInt();
